@@ -1,1 +1,7 @@
 # Password-checker-
+password = input("Enter Password: ")
+
+if len(password) >= 8 and any(i.isdigit() for i in password):
+    print("Strong Password")
+else:
+    print("Weak Password")
